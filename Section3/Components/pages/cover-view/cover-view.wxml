@@ -1,0 +1,6 @@
+<!--pages/cover-view/cover-view.wxml-->
+<map style="width:100%; height:300px;">
+  <cover-view>
+    <button style="margin: 15px; background-color: #7FFFAA;">刷新</button>
+  </cover-view>
+</map>

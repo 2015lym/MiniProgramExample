@@ -1,0 +1,24 @@
+/* pages/scroll-view/scroll-view.wxss */
+
+scroll-view {
+  width: 100%;
+  height: 100px;
+  white-space: nowrap;
+}
+
+.scroll-view-item-x {
+  background-color: #7FFFAA;
+  width: 100%;
+  line-height: 100px;
+  font-size: 35px;
+  display: inline-block;
+  text-align: center;
+}
+
+.scroll-view-item-y {
+  background-color: #E1FFFF;
+  height: 100px;
+  line-height: 100px;
+  font-size: 35px;
+  text-align: center;
+}

@@ -1,0 +1,8 @@
+<!--pages/home.wxml-->
+<text>pages/home.wxml</text>
+
+<!-- 方法1 -->
+<button bindtap="toDetail">页面跳转</button>
+
+<!-- 方法2 -->
+<navigator url="../detail/detail" open-type="navigateTo">跳转到新页面</navigator>

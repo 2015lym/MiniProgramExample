@@ -1,0 +1,15 @@
+<!--pages/scroll-view/scroll-view.wxml-->
+
+<text>\n横向滚动</text>
+<scroll-view scroll-x>
+  <view class="scroll-view-item-x">aa</view>
+  <view class="scroll-view-item-x">bb</view>
+  <view class="scroll-view-item-x">cc</view>
+</scroll-view>
+
+<text>\n纵向滚动</text>
+<scroll-view scroll-y>
+  <view class="scroll-view-item-y">aa</view>
+  <view class="scroll-view-item-y">bb</view>
+  <view class="scroll-view-item-y">cc</view>
+</scroll-view>

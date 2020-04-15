@@ -1,0 +1,13 @@
+/* pages/swiper/swiper.wxss */
+
+swiper {
+  height: 200px;
+}
+
+.item-view {
+  background-color: #7FFFAA;
+  height: 200px;
+  line-height: 200px;
+  font-size: 25px;
+  text-align: center;
+}

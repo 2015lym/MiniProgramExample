@@ -1,0 +1,18 @@
+<!--pages/view/view.wxml-->
+
+<view>视图容器测试</view>
+
+<!-- 父级view -->
+<view 
+  class="parent-view" 
+  hover-class="hover-view"
+  hover-start-time="1000"
+  hover-stay-time="2000">
+  
+  <!-- 子级view -->
+  <view 
+    class="sub-view"
+    hover-stop-propagation="false">
+  </view>
+
+</view>

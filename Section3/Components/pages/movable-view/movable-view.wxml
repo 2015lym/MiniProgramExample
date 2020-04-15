@@ -1,0 +1,4 @@
+<!--pages/movable-view/movable-view.wxml-->
+<movable-area style="background-color: #7FFFAA; width: 100%; height: 200px">
+  <movable-view style="background-color: white;width: 50px; height: 50px" direction="all"></movable-view>
+</movable-area>

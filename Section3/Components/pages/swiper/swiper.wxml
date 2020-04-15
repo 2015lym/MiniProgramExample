@@ -1,0 +1,17 @@
+<!--pages/swiper/swiper.wxml-->
+<swiper 
+  autoplay
+  indicator-dots 
+  interval="3000" 
+  duration="2000" 
+  easing-function="easeInOutCubic">
+  <swiper-item>
+    <view class="item-view">A</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item-view">B</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item-view">C</view>
+  </swiper-item>
+</swiper>

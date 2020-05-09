@@ -1,0 +1,11 @@
+<!--pages/text/text.wxml-->
+
+<text selectable>可选文本\n</text>
+
+<text>A   不支持多空格\n</text>
+
+<text space="ensp">B  中文字符空格一半大小\n</text>
+
+<text space="emsp">C  中文字符空格大小\n</text>
+
+<text space="nbsp">D  根据字体设置的空格大小</text>

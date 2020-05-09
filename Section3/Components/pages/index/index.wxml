@@ -1,6 +1,6 @@
 <!--index.wxml-->
 
-<view>小程序组装件测试</view>
+<view>小程序视图组件测试</view>
 
 <button 
   style="margin-top:15px" 
@@ -21,3 +21,17 @@
 <button 
   style="margin-top:15px" 
   bindtap="testSwiper">swiper</button>
+
+<view style="margin-top:15px">小程序基础内容组件测试</view>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testIcon">icon</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testProgress">progress</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testText">text</button>

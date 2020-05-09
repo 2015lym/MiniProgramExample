@@ -34,5 +34,21 @@ Page({
     wx.navigateTo({
       url: '../swiper/swiper',
     })
+  },
+
+  testIcon() {
+    wx.navigateTo({
+      url: '../icon/icon',
+    })
+  },
+  testProgress() {
+    wx.navigateTo({
+      url: '../progress/progress',
+    })
+  },
+  testText() {
+    wx.navigateTo({
+      url: '../text/text',
+    })
   }
 })

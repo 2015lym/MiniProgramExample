@@ -1,0 +1,7 @@
+<!--pages/list-rendering/list-rendering.wxml-->
+
+<view wx:for="{{users}}" wx:for-item="user" wx:key="num" style="margin: 15px;">
+  <text>姓名：{{user.username}}\n</text>
+  <text>性别：{{user.sex}}\n</text>
+  <text>年龄：{{user.age}}</text>
+</view>

@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view>小程序语法测试</view>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testDataBinding">数据绑定</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testListRendering">列表渲染</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testConditionalRendering">条件渲染</button>

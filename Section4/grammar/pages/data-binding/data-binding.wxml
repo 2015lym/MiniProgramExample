@@ -1,0 +1,8 @@
+<!--pages/data-binding/data-binding.wxml-->
+
+<view style="text-align: center">
+  <text>姓名：{{username}}\n</text>
+  <text>性别：{{userInfo.sex}}\n</text>
+  <text>年龄：{{userInfo.age}}</text>
+  <button bindtap="addAge">增加年龄</button>
+</view>

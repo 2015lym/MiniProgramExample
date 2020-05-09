@@ -1,0 +1,13 @@
+<!--pages/icon/icon.wxml-->
+
+<view class="icon-type">
+  <icon wx:for="{{iconType}}" type="{{item}}" size="40" />
+</view>
+
+<view class="icon-size">
+  <icon wx:for="{{iconSize}}" type="success" size="{{item}}" />
+</view>
+
+<view class="icon-color">
+  <icon wx:for="{{iconColor}}" type="success" size="40" color="{{item}}" />
+</view> 

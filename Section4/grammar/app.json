@@ -2,14 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/view/view",
-    "pages/scroll-view/scroll-view",
-    "pages/cover-view/cover-view",
-    "pages/movable-view/movable-view",
-    "pages/swiper/swiper",
-    "pages/icon/icon",
-    "pages/progress/progress",
-    "pages/text/text"
+    "pages/data-binding/data-binding",
+    "pages/list-rendering/list-rendering",
+    "pages/conditional-rendering/conditional-rendering"
   ],
   "window": {
     "backgroundTextStyle": "light",

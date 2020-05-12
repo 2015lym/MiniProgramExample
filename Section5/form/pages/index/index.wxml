@@ -1,0 +1,39 @@
+<!--index.wxml-->
+
+<view>小程序表单组件测试</view>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testButton">button</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testInput">input</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testTextarea">textarea</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testCheckbox">checkbox</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testRadio">radio</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testSlider">slider</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testSwitch">switch</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testPicker">picker</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testEditor">editor</button>

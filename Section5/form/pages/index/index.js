@@ -50,10 +50,5 @@ Page({
     wx.navigateTo({
       url: '../test-picker/test-picker',
     })
-  },
-  testEditor() {
-    wx.navigateTo({
-      url: '../test-editor/test-editor',
-    })
   }
 })

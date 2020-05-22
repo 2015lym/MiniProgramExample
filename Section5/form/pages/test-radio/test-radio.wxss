@@ -1,1 +1,16 @@
 /* pages/test-radio/test-radio.wxss */
+
+
+view {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+radio-group {
+  margin: 8px 16px;
+}
+
+radio {
+  width: 100%;
+  margin-top: 8px;
+}

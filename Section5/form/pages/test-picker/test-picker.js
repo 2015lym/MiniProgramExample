@@ -5,62 +5,48 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    selectorItem: '',
+    selectorArray: [
+      '张三', '李四', '王五'
+    ],
+    multiSelectorItem: '',
+    multiSelectorArray: [
+      ['张三', '李四', '王五'],
+      ['一班', '二班', '三班'],
+      ['在岗', '缺勤', '休息']
+    ],
+    time: '',
+    date: '',
+    region: ''
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  selectorChange(e) {
+    let value = this.data.selectorArray[e.detail.value];
+    this.setData({
+      selectorItem: value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  multiSelectorChange(e) {
+    let value1 = this.data.multiSelectorArray[0][e.detail.value[0]];
+    let value2 = this.data.multiSelectorArray[1][e.detail.value[1]];
+    let value3 = this.data.multiSelectorArray[2][e.detail.value[2]];
+    this.setData({
+      multiSelectorItem: value1 + ',' + value2 + ',' + value3
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  timeChange(e) {
+    this.setData({
+      time: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  dateChange(e) {
+    this.setData({
+      date: e.detail.value
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  regionChange(e) {
+    this.setData({
+      region: e.detail.value
+    })
   }
 })

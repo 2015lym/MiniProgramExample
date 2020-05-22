@@ -33,7 +33,3 @@
 <button 
   style="margin-top:15px" 
   bindtap="testPicker">picker</button>
-
-<button 
-  style="margin-top:15px" 
-  bindtap="testEditor">editor</button>

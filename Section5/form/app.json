@@ -4,7 +4,6 @@
     "pages/logs/logs",
     "pages/test-button/test-button",
     "pages/test-checkbox/test-checkbox",
-    "pages/test-editor/test-editor",
     "pages/test-input/test-input",
     "pages/test-picker/test-picker",
     "pages/test-radio/test-radio",

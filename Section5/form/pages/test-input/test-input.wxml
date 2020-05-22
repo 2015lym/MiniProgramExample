@@ -1,2 +1,22 @@
 <!--pages/test-input/test-input.wxml-->
-<text>pages/test-input/test-input.wxml</text>
+
+<text>普通input</text>
+<input></input>
+
+<text>带默认值的input</text>
+<input value="{{inputValue}}"></input>
+
+<text>带占位符input</text>
+<input placeholder="请输入"></input>
+
+<text>数字类型input</text>
+<input type="number"></input>
+
+<text>密码类型input</text>
+<input password></input>
+
+<text>长度限制为10的input</text>
+<input maxlength="10"></input>
+
+<text>监听输入的input</text>
+<input bindinput="inputChange"></input>

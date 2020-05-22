@@ -1,2 +1,12 @@
 <!--pages/test-radio/test-radio.wxml-->
-<text>pages/test-radio/test-radio.wxml</text>
+
+<view>性别选项（静态）</view>
+<radio-group>
+  <radio value="male">男</radio>
+  <radio value="female">女</radio>
+</radio-group>
+
+<view>年龄段选项（动态）</view>
+<radio-group>
+  <radio wx:for="{{peoples}}" wx:for-item="user" wx:key="num" value="{{user.num}}">{{user.name}}</radio>
+</radio-group>

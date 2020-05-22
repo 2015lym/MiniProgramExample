@@ -1,2 +1,10 @@
 <!--pages/test-slider/test-slider.wxml-->
-<text>pages/test-slider/test-slider.wxml</text>
+
+<view>普通滑动条</view>
+<slider></slider>
+
+<view>显示当前值的滑动条</view>
+<slider show-value></slider>
+
+<view>监听值变化的滑动条</view>
+<slider bindchange="sliderChange" show-value></slider>

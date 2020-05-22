@@ -1,2 +1,14 @@
 <!--pages/test-checkbox/test-checkbox.wxml-->
-<text>pages/test-checkbox/test-checkbox.wxml</text>
+
+<view>动物选项（静态）</view>
+<checkbox-group>
+  <checkbox value="monkey">猴子🐒</checkbox>
+  <checkbox value="snake">蛇🐍</checkbox>
+  <checkbox value="fish">鱼🐟</checkbox>
+  <checkbox value="rabbit">兔子🐇</checkbox>
+</checkbox-group>
+
+<view>联系人选项（动态）</view>
+<checkbox-group>
+  <checkbox wx:for="{{peoples}}" wx:for-item="user" wx:key="num" value="{{user.num}}">{{user.name}}</checkbox>
+</checkbox-group>

@@ -1,2 +1,29 @@
 <!--pages/test-picker/test-picker.wxml-->
-<text>pages/test-picker/test-picker.wxml</text>
+
+<view class="title-view">selector（单项选择器）</view>
+<picker range="{{selectorArray}}" bindchange="selectorChange">
+  <view class="picker">当前选择：{{selectorItem}}</view>
+</picker>
+
+<view class="title-view">multiSelector（多项选择器）</view>
+<picker 
+  mode="multiSelector" 
+  range="{{multiSelectorArray}}" 
+  bindchange="multiSelectorChange">
+  <view class="picker">当前选择：{{multiSelectorItem}}</view>
+</picker>
+
+<view class="title-view">time（时间选择器）</view>
+<picker mode="time" bindchange="timeChange">
+  <view class="picker">当前选择：{{time}}</view>
+</picker>
+
+<view class="title-view">date（日期选择器）</view>
+<picker mode="date" fields="month" bindchange="dateChange">
+  <view class="picker">当前选择：{{date}}</view>
+</picker>
+
+<view class="title-view">region（省市区选择器）</view>
+<picker mode="region" bindchange="regionChange">
+  <view class="picker">当前选择：{{region}}</view>
+</picker>

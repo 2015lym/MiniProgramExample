@@ -1,1 +1,11 @@
 /* pages/test-switch/test-switch.wxss */
+
+
+view {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+switch {
+  margin: 16px;
+}

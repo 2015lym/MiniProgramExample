@@ -1,2 +1,10 @@
 <!--pages/test-switch/test-switch.wxml-->
-<text>pages/test-switch/test-switch.wxml</text>
+
+<view>默认打开的开关</view>
+<switch checked="true"></switch>
+
+<view>改变颜色的开关</view>
+<switch color="#007aff"></switch>
+
+<view>监听开关的变化</view>
+<switch bindchange="switchChange"></switch>

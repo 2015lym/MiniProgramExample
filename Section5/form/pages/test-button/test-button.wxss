@@ -1,1 +1,5 @@
 /* pages/test-button/test-button.wxss */
+
+button{
+  margin-top: 30rpx;
+}

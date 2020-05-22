@@ -1,2 +1,8 @@
 <!--pages/test-textarea/test-textarea.wxml-->
-<text>pages/test-textarea/test-textarea.wxml</text>
+
+<view class="feedback-view">
+  <textarea class="feedback-area" value="{{feedbackText}}" placeholder="请填写意见反馈" maxlength="100" bindinput="bindinput"></textarea>
+  <view class="feedback-number">{{numberText}}</view>
+</view>
+
+<button bindtap="submit" type="primary">提交</button>

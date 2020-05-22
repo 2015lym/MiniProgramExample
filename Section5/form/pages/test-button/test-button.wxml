@@ -1,2 +1,11 @@
 <!--pages/test-button/test-button.wxml-->
-<text>pages/test-button/test-button.wxml</text>
+
+<view style="text-align:center">
+  <button>白色普通按钮</button>
+  <button type="primary">绿色普通按钮</button>
+  <button type="warn">红色普通按钮</button>
+  <button type="primary" plain>镂空按钮</button>
+  <button type="primary" loading>读取按钮</button>
+  <button type="primary" disabled>禁用按钮</button>
+  <button type="primary" size="mini">小按钮</button>
+</view>

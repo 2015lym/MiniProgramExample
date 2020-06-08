@@ -1,0 +1,8 @@
+<!--pages/test-audio/test-audio.wxml-->
+<view>
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="musicAudio" controls loop></audio>
+</view>
+
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audioReset">回到开头</button>

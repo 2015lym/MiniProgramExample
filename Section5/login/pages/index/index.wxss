@@ -1,2 +1,36 @@
 /**index.wxss**/
 
+page {
+  background-color: #f8f8fa;
+}
+
+.input-view {
+  display: flex;
+  align-items: center;
+  margin: 24px 32px;
+}
+
+input {
+  border: 1rpx solid #dddee1;
+  padding: 0px 8px;
+  margin-left: 16px;
+  height: 35px;
+  background-color: white;
+  flex: 1;
+}
+
+.switch-view {
+  margin: 0px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.button-view {
+  text-align: center;
+  margin: 16px 32px;
+}
+
+button {
+  width: 100% !important;
+}

@@ -1,0 +1,9 @@
+<!--pages/test-camera/test-camera.wxml-->
+<view class="camera-view">
+  <camera flash="off" binderror="photoError"></camera>
+</view>
+<button type="primary" bindtap="takePhoto">拍照</button>
+<view class="title-view">预览</view>
+<view class="camera-view">
+  <image mode="widthFix" src="{{photoUrl}}"></image>
+</view>

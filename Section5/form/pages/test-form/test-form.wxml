@@ -1,0 +1,22 @@
+<!--pages/test-form/test-form.wxml-->
+
+<form catchsubmit="submit" catchreset="reset">
+  <view class="title-view">姓名</view>
+  <input placeholder="请输入姓名" name="name"></input>
+
+
+  <view class="title-view">生日</view>
+  <picker mode="date" name="date">
+    <view class="picker">当前选择：{{date}}</view>
+  </picker>
+
+  <view class="textarea-view">
+    <textarea name="address" placeholder="请填写收获地址" maxlength="100" bindinput="bindAddress"></textarea>
+    <view class="textarea-number">{{numberText}}</view>
+  </view>
+
+  <view style="text-align:center">
+    <button type="primary" formType="submit">提交</button>
+    <button style="margin-top: 15px" type="primary" formType="reset">重置</button>
+  </view>
+</form>

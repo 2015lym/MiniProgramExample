@@ -9,7 +9,9 @@
     "pages/test-radio/test-radio",
     "pages/test-slider/test-slider",
     "pages/test-switch/test-switch",
-    "pages/test-textarea/test-textarea"
+    "pages/test-textarea/test-textarea",
+    "pages/test-form/test-form",
+    "pages/test-check/test-check"
   ],
   "window": {
     "backgroundTextStyle": "light",

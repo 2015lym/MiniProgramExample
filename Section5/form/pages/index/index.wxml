@@ -33,3 +33,13 @@
 <button 
   style="margin-top:15px" 
   bindtap="testPicker">picker</button>
+
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testCheck">数据校验</button>
+
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testForm">form</button>

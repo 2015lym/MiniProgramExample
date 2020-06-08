@@ -1,0 +1,46 @@
+<!--pages/test-image/test-image.wxml-->
+
+<view class="round-view">
+  <view>
+    <view>模式：scaleToFill</view>
+    <image mode="scaleToFill" src="/images/cat.jpg"></image>
+  </view>
+  <view>
+    <view>模式：aspectFit</view>
+    <image mode="aspectFit" src="/images/cat.jpg"></image>
+  </view>
+</view>
+
+
+<view class="round-view">
+  <view>
+    <view>模式：aspectFill</view>
+    <image mode="aspectFill" src="/images/cat.jpg"></image>
+  </view>
+  <view>
+    <view>模式：widthFix</view>
+    <image mode="widthFix" src="/images/cat.jpg"></image>
+  </view>
+</view>
+
+<view class="round-view">
+  <view>
+    <view>模式：heightFix</view>
+    <image mode="heightFix" src="/images/cat.jpg"></image>
+  </view>
+  <view>
+    <view>模式：top</view>
+    <image mode="top" src="/images/cat.jpg"></image>
+  </view>
+</view>
+
+<view class="round-view">
+  <view>
+    <view>模式：bottom</view>
+    <image mode="bottom" src="/images/cat.jpg"></image>
+  </view>
+  <view>
+    <view>模式：center</view>
+    <image mode="center" src="/images/cat.jpg"></image>
+  </view>
+</view>

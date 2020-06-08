@@ -1,0 +1,22 @@
+<!--pages/test-check/test-check.wxml-->
+<view class="title-view">姓名</view>
+<input placeholder="请输入姓名" bindinput="bindName"></input>
+
+
+<view class="title-view">生日</view>
+<picker mode="date" bindchange="dateChange">
+  <view class="picker">当前选择：{{date}}</view>
+</picker>
+
+<view class="textarea-view">
+  <textarea 
+    value="{{address}}" 
+    placeholder="请填写收获地址" 
+    maxlength="100" 
+    bindinput="bindAddress"></textarea>
+  <view class="textarea-number">{{numberText}}</view>
+</view>
+
+<view style="text-align:center">
+  <button type="primary" bindtap="submit">提交</button>
+</view>

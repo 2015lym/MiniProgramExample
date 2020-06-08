@@ -1,0 +1,5 @@
+/* pages/test-video/test-video.wxss */
+
+view {
+  text-align: center;
+}

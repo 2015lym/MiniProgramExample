@@ -1,0 +1,4 @@
+<!--pages/test-video/test-video.wxml-->
+<view>
+  <video src="{{src}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+</view>

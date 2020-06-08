@@ -1,0 +1,12 @@
+/* pages/test-image/test-image.wxss */
+
+.round-view {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+image {
+  height: 120px;
+  width: 120px;
+}

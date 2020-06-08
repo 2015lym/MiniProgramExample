@@ -50,5 +50,15 @@ Page({
     wx.navigateTo({
       url: '../test-picker/test-picker',
     })
+  },
+  testCheck() {
+    wx.navigateTo({
+      url: '../test-check/test-check',
+    })
+  },
+  testForm() {
+    wx.navigateTo({
+      url: '../test-form/test-form',
+    })
   }
 })

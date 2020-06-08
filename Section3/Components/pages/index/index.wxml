@@ -35,3 +35,7 @@
 <button 
   style="margin-top:15px" 
   bindtap="testText">text</button>
+
+<view style="text-align:center">
+  <navigator url="/pages/view/view">跳转到新页面</navigator>
+</view>

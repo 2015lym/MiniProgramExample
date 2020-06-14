@@ -1,2 +1,7 @@
 <!--pages/test-map/test-map.wxml-->
-<text>pages/test-map/test-map.wxml</text>
+<map 
+  scale="11" 
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}" 
+  markers="{{markers}}" 
+  bindmarkertap="markertap"></map>

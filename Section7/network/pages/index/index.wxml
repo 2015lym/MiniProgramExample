@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view wx:for="{{users}}" wx:for-item="item" wx:key="id" style="margin-left: 16px">
+  {{item.name}}
+</view>

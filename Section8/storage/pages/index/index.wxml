@@ -1,2 +1,11 @@
 <!--index.wxml-->
 
+<view style="margin: 16px;">小程序表单组件测试</view>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testStorage">数据缓存</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testFile">文件管理</button>

@@ -13,7 +13,7 @@ Page({
    * 生命周期函数--页面创建时执行å
    */
   onLoad: function(options) {
-    Request.get('users').then(res => {
+    Request.get('users',{},{userId: 1234}).then(res => {
       this.setData({
         users: res.data
       })

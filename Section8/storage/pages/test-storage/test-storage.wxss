@@ -1,0 +1,17 @@
+/* pages/test-storage/test-storage.wxss */
+
+
+.title-view {
+  margin: 16px;
+}
+
+input {
+  border: 1rpx solid #dddee1;
+  margin: 8px 16px;
+  padding: 0px 8px;
+  height: 30px;
+}
+
+button {
+  margin-top: 16px;
+}

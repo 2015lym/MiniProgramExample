@@ -1,0 +1,12 @@
+<!--pages/test-storage/test-storage.wxml-->
+
+<view class="title-view">1.数据的存储</view>
+<input bindinput="saveInputChange"></input>
+<button type="primary" bindtap="setValue">保存数据</button>
+<button type="primary" bindtap="setValueSync">同步保存数据</button>
+
+
+<view class="title-view">2.数据的读取</view>
+<input value="{{loadValue}}" disabled></input>
+<button type="primary" bindtap="getValue">读取数据</button>
+<button type="primary" bindtap="getValueSync">同步读取数据</button>

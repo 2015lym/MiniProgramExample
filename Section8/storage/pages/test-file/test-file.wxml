@@ -1,2 +1,18 @@
 <!--pages/test-file/test-file.wxml-->
-<text>pages/test-file/test-file.wxml</text>
+
+<view class="title-view">1.文件下载</view>
+<button type="primary" bindtap="downloadFile">下载文件</button>
+
+<view class="title-view">2.文件保存</view>
+<button type="primary" bindtap="saveFile">保存文件</button>
+<view class="image-view">
+	<view class="center-view">预览图</view>
+	<image mode="aspectFit" src="{{url}}"></image>
+</view>
+
+<view class="title-view">3.文件信息读取</view>
+<button type="primary" bindtap="getFileList">获取文件列表</button>
+<button type="primary" bindtap="getFileInfo">获取文件信息</button>
+
+<view class="title-view">4.文件删除</view>
+<button type="primary" bindtap="deleteFile">删除文件</button>

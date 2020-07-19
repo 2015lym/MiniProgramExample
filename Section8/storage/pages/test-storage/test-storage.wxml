@@ -10,3 +10,17 @@
 <input value="{{loadValue}}" disabled></input>
 <button type="primary" bindtap="getValue">读取数据</button>
 <button type="primary" bindtap="getValueSync">同步读取数据</button>
+
+
+<view class="title-view">3.数据的删除</view>
+<button type="primary" bindtap="removeValue">删除数据</button>
+<button type="primary" bindtap="removeValueSync">同步删除数据</button>
+<button type="primary" bindtap="clearValue">清空数据</button>
+<button type="primary" bindtap="clearValueSync">同步清空数据</button>
+
+
+<view class="title-view">4.获取存储信息</view>
+<input value="keys：{{info.keys}}" disabled></input>
+<input value="已使用空间：{{info.currentSize}}KB" disabled></input>
+<input value="最大空间：{{info.limitSize}}KB" disabled></input>
+<button type="primary" bindtap="getInfo">读取数据</button>

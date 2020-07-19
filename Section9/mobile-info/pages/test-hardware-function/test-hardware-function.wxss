@@ -1,0 +1,17 @@
+/* pages/test-hardware-function/test-hardware-function.wxss */
+
+view {
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+button {
+  margin-top: 16px;
+}
+
+input {
+  border: 1rpx solid #dddee1;
+  margin: 8px 16px;
+  padding: 0px 8px;
+  height: 30px;
+}

@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view>设备信息与硬件功能</view>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testSystemInfo">设备信息</button>
+
+<button 
+  style="margin-top:15px" 
+  bindtap="testHardwareFunction">硬件功能</button>

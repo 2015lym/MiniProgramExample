@@ -1,0 +1,18 @@
+<!--pages/test-hardware-function/test-hardware-function.wxml-->
+
+<view>1.拨打电话</view>
+<input placeholder="请输入电话号码" bindinput="phoneChange"></input>
+<button type="primary" bindtap="callPhone">拨打电话</button>
+
+<view>2.扫描二维码</view>
+<button type="primary" bindtap="scanQrcode">扫码</button>
+
+<view>3.剪贴板</view>
+<input placeholder="请输入剪贴板内容" bindinput="clipboardChange"></input>
+<button type="primary" bindtap="setClipboardInfo">设置剪贴板内容</button>
+<view>当前剪贴板内容：{{clipboardInfo}}</view>
+<button type="primary" bindtap="getClipboardInfo">读取剪贴板内容</button>
+
+<view>4.震动</view>
+<button type="primary" bindtap="shortVibrate">短震动</button>
+<button type="primary" bindtap="longVibrate">长震动</button>

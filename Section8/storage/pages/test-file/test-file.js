@@ -5,62 +5,83 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    downFilePath: '',
+    url: '',
+    fileList: []
+  },
+  downloadFile() {
+    var self = this;
+    wx.downloadFile({
+      url: 'https://ss1.baidu.com/6ON1bjeh1BF3odCf/it/u=848642474,1693258193&fm=27&gp=0.jpg',
+      success(res) {
+        console.log(res)
+        self.setData({
+          downFilePath: res.tempFilePath
+        })
+      }
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  saveFile() {
+    if (this.data.downFilePath == '') {
+      wx.showToast({
+        title: '请先下载文件',
+      })
+      return;
+    }
+    var self = this;
+    wx.saveFile({
+      tempFilePath: this.data.downFilePath,
+      success(res) {
+        console.log(res)
+        self.setData({
+          url: res.savedFilePath
+        })
+      }
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  getFileList() {
+    var self = this;
+    wx.getSavedFileList({
+      success(res) {
+        console.log(res)
+        self.setData({
+          fileList: res.fileList
+        })
+      }
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  getFileInfo() {
+    if (this.data.fileList.length == 0) {
+      wx.showToast({
+        title: '请先获取文件列表',
+      })
+      return;
+    }
+    var self = this;
+    wx.getSavedFileInfo({
+      filePath: this.data.fileList[0].filePath,
+      success(res) {
+        console.log(res)
+      }
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  deleteFile() {
+    if (this.data.fileList.length == 0) {
+      wx.showToast({
+        title: '请先获取文件列表',
+      })
+      return;
+    }
+    var self = this;
+    wx.removeSavedFile({
+      filePath: this.data.fileList[0].filePath,
+      success(res) {
+        console.log(res)
+      }
+    })
   }
 })

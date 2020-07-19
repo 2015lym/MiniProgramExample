@@ -1,0 +1,17 @@
+<!--pages/test-system-info/test-system-info.wxml-->
+<view>1.设备信息</view>
+<button type="primary" bindtap="getSystemInfo">获取设备信息</button>
+
+<view>2.网络状态</view>
+<input value="{{netWorkType}}" disabled></input>
+<button type="primary" bindtap="getNetworkStatus">获取网络状态</button>
+<button type="primary" bindtap="networkStatusChanges">监听网络状态</button>
+
+<view>3.设备电量</view>
+<button type="primary" bindtap="getBattery">获取设备电量</button>
+<view>
+	<text>
+    设备电量：{{batteryInfo.level}}
+    是否在充电中：{{batteryInfo.isCharging}}
+  </text>
+</view>

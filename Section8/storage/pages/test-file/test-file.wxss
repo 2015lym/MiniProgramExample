@@ -1,1 +1,28 @@
 /* pages/test-file/test-file.wxss */
+
+
+.title-view {
+  margin: 16px;
+}
+
+button {
+  margin-top: 16px;
+}
+
+.image-view {
+  margin: 16px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1rpx solid #dddee1;
+}
+
+image {
+  height: 178px;
+}
+
+.center-view {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+<!--pages/edit-people/edit-people.wxml-->
+<i-panel title="人员信息">
+  <i-input 
+    right 
+    title="姓名" 
+    value="{{item.name}}" 
+    placeholder="请输入姓名" 
+    bind:change="changeName" />
+  <i-input 
+    right
+    title="年龄" 
+    type="number" 
+    value="{{item.age}}" 
+    placeholder="请输入年龄"
+    bind:change="changeAge" />
+  <i-input 
+    right
+    title="地址" 
+    value="{{item.address}}" 
+    placeholder="请输入地址"
+    bind:change="changeAddress" />
+</i-panel>
+
+<i-button bind:click="submit" type="primary">提交</i-button>

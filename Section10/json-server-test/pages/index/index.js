@@ -2,7 +2,16 @@
 
 Page({
   data: {
-    listData: []
+    listData: [],
+    currentUserId: '',
+    deleteVisible: false,
+    deleteActions: [{
+      name: '取消'
+    }, {
+      name: '删除',
+      color: '#ed3f14',
+      loading: false
+    }]
   },
   onShow: function () {
     this.getUsersList()
@@ -20,24 +29,42 @@ Page({
   },
   // 新增
   addPeople() {
-
+    wx.navigateTo({
+      url: '../edit-people/edit-people',
+    })
   },
   // 编辑
   edit(data) {
-    console.log(data)
+    const item = data.currentTarget.dataset.item
+    wx.navigateTo({
+      url: '../edit-people/edit-people?item=' + JSON.stringify(item)
+    })
   },
   // 删除
   delete(data) {
-    var userId = data.currentTarget.dataset.item.id;
-    wx.request({
-      method: 'DELETE',
-      url: 'http://localhost:3000/users/' + userId,
-      success: (res) => {
-        wx.showToast({
-          title: '删除成功',
-        })
-      }
+    this.setData({
+      currentUserId: data.currentTarget.dataset.item.id,
+      deleteVisible: true
+    });
+  },
+  deleteItem({ detail }) {
+    const index = detail.index;
+    this.setData({
+      deleteVisible: false
     })
+    if (index == 1) {
+      wx.request({
+        method: 'DELETE',
+        url: 'http://localhost:3000/users/' + this.data.currentUserId,
+        success: (res) => {
+          wx.showToast({
+            title: '删除成功',
+          })
+          this.getUsersList();
+        }
+      })
+    }
+    
   }
 
 })

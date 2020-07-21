@@ -11,3 +11,7 @@
     <i-button inline bind:click="delete" type="error" data-item="{{item}}">删除</i-button>
   </view>
 </view>
+
+<i-modal title="删除确认" visible="{{deleteVisible}}" actions="{{deleteActions}}" bind:click="deleteItem">
+  <view>删除后无法恢复哦</view>
+</i-modal>

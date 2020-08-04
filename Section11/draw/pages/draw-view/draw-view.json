@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "抽签",
+  "usingComponents": {
+    "i-button": "/dist/button/index",
+    "i-cell-group": "/dist/cell-group/index",
+    "i-cell": "/dist/cell/index",
+    "i-modal": "/dist/modal/index"
+  }
+}

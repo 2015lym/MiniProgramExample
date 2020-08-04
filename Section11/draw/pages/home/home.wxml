@@ -1,0 +1,19 @@
+<!--pages/home/home.wxml-->
+
+<i-button type="primary" bind:click="addItem">添加选项</i-button>
+
+<i-cell-group>
+  <i-cell 
+    wx:for="{{listData}}" 
+    wx:for-item="item" 
+    wx:key="item" 
+    data-item="{{item}}" 
+    title="{{item}}"
+    bindtap="draw"
+    bindlongpress="delete"
+    is-link></i-cell>
+</i-cell-group>
+
+<i-modal title="删除确认" visible="{{ visible }}" actions="{{ actions }}" bind:click="realDelete">
+  <view>删除后无法恢复哦</view>
+</i-modal>

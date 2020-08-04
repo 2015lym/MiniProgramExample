@@ -1,0 +1,9 @@
+<!--pages/edit-item/edit-item.wxml-->
+<i-panel title="{{title}}">
+  <i-input 
+    value="{{itemName}}" 
+    placeholder="请输入选项" 
+    bind:change="changeItem" />
+</i-panel>
+
+<i-button bind:click="submit" type="primary">提交</i-button>

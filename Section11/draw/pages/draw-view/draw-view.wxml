@@ -1,0 +1,18 @@
+<!--pages/draw-view/draw-view.wxml-->
+<i-button type="primary" bind:click="addItem">添加子选项</i-button>
+
+<i-button type="success" bind:click="draw">抽签</i-button>
+
+<i-cell-group>
+  <i-cell 
+    wx:for="{{listData}}" 
+    wx:for-item="item" 
+    wx:key="item" 
+    data-item="{{item}}" 
+    title="{{item}}"
+    bindlongpress="delete"></i-cell>
+</i-cell-group>
+
+<i-modal title="删除确认" visible="{{ visible }}" actions="{{ actions }}" bind:click="realDelete">
+  <view>删除后无法恢复哦</view>
+</i-modal>

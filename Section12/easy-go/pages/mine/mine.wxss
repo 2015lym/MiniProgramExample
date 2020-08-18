@@ -1,0 +1,6 @@
+/* pages/mine/mine.wxss */
+
+
+.view-margin {
+  margin-top: 16px;
+}

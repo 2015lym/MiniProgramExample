@@ -1,0 +1,38 @@
+<!--pages/category/category.wxml-->
+<view class="back-view">
+  <view class="left-view">
+    <view class="item-view">文学</view>
+    <view class="item-view">历史</view>
+    <view class="item-view">小说</view>
+    <view class="item-view">政治</view>
+    <view class="item-view">医学</view>
+    <view class="item-view">社会</view>
+    <view class="item-view">科学</view>
+    <view class="item-view">宗教</view>
+    <view class="item-view">心理学</view>
+    <view class="item-view">计算机</view>
+    <view class="item-view">法律</view>
+    <view class="item-view">旅游</view>
+    <view class="item-view">建筑</view>
+    <view class="item-view">儿童</view>
+  </view>
+  <view class="right-view">
+    <view 
+      style="margin-top: 16px"
+      wx:for="{{bookList}}"
+      wx:for-item="item"
+      wx:key="id"
+      data-item="{{item}}"
+      bindtap="selectBook">
+    <i-card title="{{item.name}}" extra="作者：{{item.author}}" 
+      thumb="{{item.image}}">
+      <view slot="content">
+        <text class="original-price">¥ {{item.originalPrice}}</text>
+        <text space="ensp" class="price">  ¥ {{item.price}}</text>
+      </view>
+    </i-card>
+  </view>
+  </view>
+</view>
+
+

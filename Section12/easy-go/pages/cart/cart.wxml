@@ -1,0 +1,24 @@
+<!--pages/cart/cart.wxml-->
+
+<view 
+  style="margin-top: 16px"
+  wx:for="{{bookList}}"
+  wx:for-item="item"
+  wx:key="id"
+  data-item="{{item}}"
+  bindtap="selectBook"
+  >
+  <i-card title="{{item.name}}" extra="作者：{{item.author}}" 
+    thumb="{{item.image}}">
+    <view slot="content">
+      <text class="original-price">¥ {{item.originalPrice}}</text>
+      <text space="ensp" class="price">  ¥ {{item.price}}</text>
+    </view>
+  </i-card>
+</view>
+
+
+<view class="bottom-view">
+  <i-button bind:click="buy" type="error" long>结账</i-button>
+</view>
+

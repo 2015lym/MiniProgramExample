@@ -1,0 +1,71 @@
+{
+  "banner": [
+    {
+      "id": 1,
+      "url": "/images/banner/banner1.jpg"
+    },
+    {
+      "id": 2,
+      "url": "/images/banner/banner2.jpg"
+    },
+    {
+      "id": 3,
+      "url": "/images/banner/banner3.jpg"
+    }
+  ],
+  "activity": [
+    {
+      "id": 1,
+      "name": "优惠专区",
+      "image": "/images/home/home-icon-1.png"
+    },
+    {
+      "id": 2,
+      "name": "限时抢购",
+      "image": "/images/home/home-icon-2.png"
+    },
+    {
+      "id": 3,
+      "name": "本期福利",
+      "image": "/images/home/home-icon-3.png"
+    },
+    {
+      "id": 4,
+      "name": "特卖图书",
+      "image": "/images/home/home-icon-4.png"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "name": "红楼梦",
+      "author": "曹雪芹",
+      "content": "正版精装 红楼梦 中国古典文学名著 [清]曹雪芹著 课外阅读书四大名著",
+      "originalPrice": "50.0",
+      "price": "39.9",
+      "sales": "233",
+      "image": "/images/books/book1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "三国演义",
+      "author": "罗贯中",
+      "content": "正版精装 三国演义 中国古典文学名著 [明]罗贯中著 课外阅读书四大名著",
+      "originalPrice": "60.0",
+      "price": "45.0",
+      "sales": "333",
+      "image": "/images/books/book2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "西游记",
+      "author": "吴承恩",
+      "content": "正版精装 西游记 中国古典文学名著 [明]吴承恩著 课外阅读书四大名著",
+      "originalPrice": "55.0",
+      "price": "42.9",
+      "sales": "325",
+      "image": "/images/books/book3.jpeg"
+    }
+  ],
+  "carts": []
+}

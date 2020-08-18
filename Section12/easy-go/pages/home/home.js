@@ -1,66 +1,50 @@
 // pages/home/home.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    bannerList: [],
+    activityList: [],
+    bookList: []
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-
+    this.getBanner()
+    this.getActivity()
+    this.getBooks()
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  getBanner() {
+    wx.request({
+      url: 'http://localhost:3000/banner',
+      success: (res) => {
+        this.setData({
+          bannerList: res.data
+        })
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  getActivity() {
+    wx.request({
+      url: 'http://localhost:3000/activity',
+      success: (res) => {
+        this.setData({
+          activityList: res.data
+        })
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  getBooks() {
+    wx.request({
+      url: 'http://localhost:3000/books',
+      success: (res) => {
+        this.setData({
+          bookList: res.data
+        })
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  selectBook(e) {
+    wx.navigateTo({
+      url: '../detail/detail?item=' + JSON.stringify(e.currentTarget.dataset.item),
+    })
   }
 })

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "购物车",
+  "usingComponents": {
+    "i-card": "/dist/card/index",
+    "i-button": "/dist/button/index"
+  }
+}

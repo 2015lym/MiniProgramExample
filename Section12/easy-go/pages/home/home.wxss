@@ -1,1 +1,49 @@
 /* pages/home/home.wxss */
+
+swiper {
+  height: 200px;
+}
+
+.item-view {
+  width: 100%;
+  height: 200px;
+  line-height: 200px;
+}
+
+.activity-view {
+  background-color: white;
+}
+
+.activity-top {
+  text-align: center;
+  line-height: 40px;
+  color: gray;
+}
+
+.activity-bottom {
+  display: flex;
+  justify-content: space-around;
+  font-size: 11px;
+}
+
+.activity-sub-view {
+  height: 70px;
+  width: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.activity-image {
+  height: 30px;
+  width: 30px;
+}
+
+.original-price {
+  text-decoration: line-through;
+}
+
+.price {
+  color: red;
+}

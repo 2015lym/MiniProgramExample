@@ -1,0 +1,19 @@
+<!--pages/detail/detail.wxml-->
+<view class="top-view">
+  <image class="top-image" mode="heightFix" src="{{item.image}}"></image>
+</view>
+
+<view class="good-info-view">
+  <text class="original-price">¥ {{item.originalPrice}}</text>
+  <text space="ensp" class="price">  ¥ {{item.price}}\n</text>
+  <text>{{item.content}}</text>
+  <view class="sales-view">
+    <text>快递：包邮</text>
+    <text>销量：{{item.sales}}</text>
+  </view>
+</view>
+
+<view class="bottom-view">
+  <i-button bind:click="addCart" type="error" long>立即购买</i-button>
+</view>
+

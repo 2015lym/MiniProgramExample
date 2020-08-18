@@ -1,2 +1,46 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<swiper 
+  autoplay
+  indicator-dots 
+  interval="3000" 
+  duration="2000" 
+  easing-function="easeInOutCubic">
+  <swiper-item 
+    wx:for="{{bannerList}}"
+    wx:for-item="item"
+    wx:key="id">
+    <image class="item-view" mode="widthFix" 
+      src="{{item.url}}"></image>
+  </swiper-item>
+</swiper>
+
+<view class="activity-view">
+  <view class="activity-top">———— 本期活动 ————</view>
+  <view class="activity-bottom">
+    <view 
+      class="activity-sub-view" 
+      wx:for="{{activityList}}"
+      wx:for-item="item"
+      wx:key="id">
+      <image class="activity-image" 
+        src="{{item.image}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>
+
+<view 
+  style="margin-top: 16px"
+  wx:for="{{bookList}}"
+  wx:for-item="item"
+  wx:key="id"
+  data-item="{{item}}"
+  bindtap="selectBook">
+  <i-card title="{{item.name}}" extra="作者：{{item.author}}" 
+    thumb="{{item.image}}">
+    <view slot="content">
+      <text class="original-price">¥ {{item.originalPrice}}</text>
+      <text space="ensp" class="price">  ¥ {{item.price}}</text>
+    </view>
+  </i-card>
+</view>

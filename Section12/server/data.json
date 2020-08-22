@@ -67,5 +67,16 @@
       "image": "/images/books/book3.jpeg"
     }
   ],
-  "carts": []
+  "carts": [
+    {
+      "id": 1,
+      "name": "红楼梦",
+      "author": "曹雪芹",
+      "content": "正版精装 红楼梦 中国古典文学名著 [清]曹雪芹著 课外阅读书四大名著",
+      "originalPrice": "50.0",
+      "price": "39.9",
+      "sales": "233",
+      "image": "/images/books/book1.jpeg"
+    }
+  ]
 }
